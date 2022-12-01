@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'say-hello';
+  showFortcel = true;
+  showAnalogit = false;
+  showForm = false;
+  showList = true;
+  expand = false;
 }

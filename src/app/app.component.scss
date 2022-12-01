@@ -1,0 +1,383 @@
+.left-container {
+  position: fixed;
+  background-image: url(../assets/images/background.jpg);
+  height: 100vh;
+  width: 70vw;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position-y: -200px;
+  background-size: 100em;
+
+  .sig-det-med-video-container {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(89,89,89, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 12%;
+    position: relative;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+
+    h1 {
+      font-family: Maecenas-UltraBoldItalic, serif;
+      color: #ffffff;
+    }
+
+    h6 {
+      font-family: Maecenas-ExtraLightItalic, serif;
+      color: #ffffff;
+
+      span {
+        color: #d9c174 !important;
+      }
+    }
+  }
+
+  .analogit-or-digitalt-container {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(89,89,89, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 11%;
+    position: relative;
+    color: #ffffff;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+
+    p {
+      margin-bottom: 40px;
+      line-height: 30px;
+      font-family: Maecenas-BoldItalic, serif;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 20px;
+        line-height: 15px;
+        font-family: Maecenas-ExtraLightItalic, serif;
+      }
+
+      li::marker {
+        content: "" !important;
+      }
+    }
+
+    .video-container {
+      height: 230px;
+      width: 100%;
+      border: 2px solid #d9c174;
+      border-radius: 50px;
+
+      iframe {
+        height: 100%;
+        width: 100%;
+        border-radius: 50px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .hide-sig-det-med-video-container {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .hide-analogit-or-digitalt-container {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .social-media-container {
+    position: absolute;
+    bottom: 35px;
+    right: 75px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    img {
+      height: 25px;
+      width: 25px;
+      object-fit: cover;
+    }
+  }
+}
+
+.right-container {
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .copy-right-container {
+    position: absolute;
+    bottom: 40px;
+    left: 35px;
+    font-size: 10px;
+
+    span {
+      font-family: Maecenas-ExtraLightItalic, serif;
+    }
+  }
+
+  .fortcel-mig-mere-container {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-family: CantoniPro-Bold, serif;
+    color: #d9c174;
+    font-size: 80px;
+  }
+
+  ul li {
+    font-family: Maecenas-ExtraLightItalic, serif;
+  }
+
+  .kontakt-os-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    position: relative;
+    transition: opacity 0.5s linear;
+    height: 100%;
+
+    h4 {
+      font-family: Maecenas-BoldItalic, serif;
+      font-size: 30px;
+    }
+
+    .arrow-up {
+      left: 40% !important;
+    }
+  }
+
+  .hide-fortcel-mig-mere-container {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .hide-kontakt-os-container {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.mobile-nav-container {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px;
+
+  h3 {
+    font-family: CantoniPro-Bold, serif;
+    color: #d9c174;
+    font-size: 50px;
+    margin: 0;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .show {
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+  }
+
+  .hide {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+:host::ng-deep {
+  .arrow-up {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    cursor: pointer;
+    border-radius: 50%;
+    width: max-content;
+    padding: 10px;
+
+    bi {
+      height: 50px !important;
+      width: 50px !important;
+
+      svg {
+        fill: #5c5a5b !important;
+        stroke: #a9a7a8 !important;
+        stroke-linejoin: miter;
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  .left-container {
+    .analogit-or-digitalt-container {
+      padding: 0 5% !important;
+    }
+
+    .arrow-up {
+      left: 45%;
+    }
+  }
+}
+
+
+@media (min-width: 550px) and (max-width: 1100px) {
+  .right-container {
+    display: none;
+  }
+
+  .left-container {
+    width: 100vw !important;
+    height: 100vh !important;
+
+    .arrow-up {
+      left: 45%;
+    }
+
+    .video-container {
+      margin-top: 40px;
+    }
+
+    .sig-det-med-video-container {
+      justify-content: center !important;
+      padding: 0 !important;
+
+      > div > div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .analogit-or-digitalt-container {
+      padding: 0 8% !important;
+
+      > div > div:first-child {
+        padding: 0 !important;
+      }
+    }
+  }
+
+  .mobile-nav-container {
+    display: flex !important;
+    .right-container {
+      display: flex !important;
+      position: fixed;
+      top: 100px;
+      height: 100vh;
+      width: 90vw;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      z-index: 1;
+      opacity: 1;
+      right: 0;
+      transition: opacity 0.3s linear;
+
+      .arrow-up {
+        left: 45% !important;
+      }
+    }
+
+    .right-container.hide {
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: 335px) and (max-width: 549px) {
+  .right-container {
+    display: none;
+  }
+
+  .left-container {
+    width: 100vw !important;
+    height: 100vh !important;
+
+    .arrow-up {
+      left: 45%;
+    }
+
+    .video-container {
+      margin-top: 40px;
+    }
+
+    .sig-det-med-video-container {
+      justify-content: center !important;
+      padding: 0 !important;
+    }
+
+    .analogit-or-digitalt-container {
+      padding: 0 8% !important;
+
+      > div > div:first-child {
+        padding: 0 !important;
+      }
+    }
+  }
+
+  .mobile-nav-container {
+    display: flex !important;
+
+    .right-container {
+      display: flex !important;
+      position: fixed;
+      top: 100px;
+      height: 100vh;
+      width: 90vw;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      z-index: 1;
+      opacity: 1;
+      right: 0;
+      transition: opacity 0.3s linear;
+
+      .arrow-up {
+        left: 45% !important;
+      }
+    }
+
+    .right-container.hide {
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+}
+

@@ -1,1 +1,165 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "CantoniPro-Bold";
+  src: local("CantoniPro-Bold"), url(./assets/fonts/CantoniPro-Bold.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "CantoniPro-Regular";
+  src: local("CantoniPro-Regular"), url(./assets/fonts/CantoniPro-Regular.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-Black";
+  src: local("Maecenas-Black"), url(./assets/fonts/Maecenas-Black.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-BlackItalic";
+  src: local("Maecenas-BlackItalic"), url(./assets/fonts/Maecenas-BlackItalic.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-Bold";
+  src: local("Maecenas-Bold"), url(./assets/fonts/Maecenas-Bold.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-BoldItalic";
+  src: local("Maecenas-BoldItalic"), url(./assets/fonts/Maecenas-BoldItalic.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-ExtraBold";
+  src: local("Maecenas-ExtraBold"), url(./assets/fonts/Maecenas-ExtraBold.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-ExtraBold";
+  src: local("Maecenas-ExtraBold"), url(./assets/fonts/Maecenas-ExtraBold.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-ExtraBoldItalic";
+  src: local("Maecenas-ExtraBoldItalic"), url(./assets/fonts/Maecenas-ExtraBoldItalic.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-ExtraLight";
+  src: local("Maecenas-ExtraLight"), url(./assets/fonts/Maecenas-ExtraLight.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-ExtraLightItalic";
+  src: local("Maecenas-ExtraLightItalic"), url(./assets/fonts/Maecenas-ExtraLightItalic.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-Heavy";
+  src: local("Maecenas-Heavy"), url(./assets/fonts/Maecenas-Heavy.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-HeavyItalic";
+  src: local("Maecenas-HeavyItalic"), url(./assets/fonts/Maecenas-HeavyItalic.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-Light";
+  src: local("Maecenas-Bold"), url(./assets/fonts/Maecenas-Bold.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-LightItalic";
+  src: local("Maecenas-LightItalic"), url(./assets/fonts/Maecenas-LightItalic.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-Medium";
+  src: local("Maecenas-Bold"), url(./assets/fonts/Maecenas-Bold.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-MediumItalic";
+  src: local("Maecenas-MediumItalic"), url(./assets/fonts/Maecenas-MediumItalic.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-Regular";
+  src: local("Maecenas-Regular"), url(./assets/fonts/Maecenas-Regular.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-RegularItalic";
+  src: local("Maecenas-RegularItalic"), url(./assets/fonts/Maecenas-RegularItalic.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-SemiBold";
+  src: local("Maecenas-SemiBold"), url(./assets/fonts/Maecenas-SemiBold.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-SemiBoldItalic";
+  src: local("Maecenas-SemiBoldItalic"), url(./assets/fonts/Maecenas-SemiBoldItalic.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-Thin";
+  src: local("Maecenas-Thin"), url(./assets/fonts/Maecenas-Thin.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-ThinItalic";
+  src: local("Maecenas-ThinItalic"), url(./assets/fonts/Maecenas-ThinItalic.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-UltraBold";
+  src: local("Maecenas-UltraBold"), url(./assets/fonts/Maecenas-UltraBold.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Maecenas-UltraBoldItalic";
+  src: local("Maecenas-UltraBoldItalic"), url(./assets/fonts/Maecenas-UltraBoldItalic.otf) format("OpenType");
+}
+
+.btn {
+  padding: 8px 30px !important;
+  border-radius: 30px !important;
+
+}
+
+.btn-primary {
+  background-color: #d9c174 !important;
+  border-color: #d9c174 !important;
+}
+
+.btn-secondary {
+  background-color: #008778 !important;
+  border-color: #008778 !important;
+}
+
+bi {
+  height: 30px;
+  width: 40px;
+
+  svg {
+    fill: #d9c174;
+  }
+}
+
+input, textarea {
+  border: 1px solid #d9c174;
+  border-radius: 20px;
+  padding: 5px 15px;
+  resize: none !important;
+  font-family: Maecenas-Italic, serif !important;
+}
+
+input:focus-visible, textarea:focus-visible {
+  border-color: #d9c174 !important;
+}
+
+button, input::placeholder, textarea::placeholder {
+  font-family: Maecenas-ExtraLightItalic, serif !important;
+}
